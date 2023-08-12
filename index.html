@@ -1,617 +1,78 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-<title>TLSP-Bedrock</title>
+<title>TLSP-Bedrock-Beta-0.4.3-Fixed-Fixed.rar - 蓝奏云</title>
+<meta name="description" content="文件大小：5.2 M|" />
+<script type="text/javascript" src="https://assets.woozooo.com/assets/img/qrcode.min.js"></script>
 <link rel="shortcut icon" href="https://assets.woozooo.com/assets/favicon.ico">
-<script type="text/javascript" src="https://assets.woozooo.com/assets/includes/js/jquery.js"></script>
-<script type="text/javascript" src="https://assets.woozooo.com/assets/img/qrcode.min.js"></script></head>
+</head>
 <body>
-<div id="sms"><span id="smsspan"></span></div>
 <style>
-#info{display:none}
-#pwdload{position: fixed;background: #fff;background: rgba(255, 255, 255, .96);width: 100%;height: 100%;top: 0;bottom: 0;z-index: 98;}
-.passwddiv-center{width: 300px;height: 300px;position: absolute;bottom: 50%;margin-bottom: -100px;left: 50%;margin-left: -150px;}
-.passwddiv-userico{margin: auto;width: 90px;}
-.passwddiv-userico-img{width: 90px;height: 90px;border-radius: 50%;position: absolute;}
-.passwddiv-userico-0{background: #e9edef;width: 90px;height: 75px;border-radius: 50%;padding-top: 15px;}
-.passwddiv-userico-1{background: #fff;width: 30px;height: 30px;border-radius: 50%;margin: auto;}
-.passwddiv-userico-2{background: #fff;width: 59px;height: 26px;border-radius: 50%;margin: auto;margin-top: 3px;}
-.passwddiv-user{text-align: center;margin-top: 20px;font-size: 14px;}
-.passwddiv-user span{color: #000000;padding: 0 5px;}
-.passwddiv-input{width: 200px;margin: auto;padding:10px;border-radius:5px;margin-top: 20px;background: #e9edef;}
-.passwddiv-input:hover{background: #e1e7ea;}
-.passwdinput{font-size: 14px;border: 0;background: #e9edef;background: #ffffff\9;line-height: 30px;height: 30px;outline: 0;padding: 0;text-indent: 5px;width: 160px;}
-.passwdinput:focus{background: #e1e7ea;}
-.passwddiv-btn{width: 30px;height: 30px;background: #0af;border-radius: 50%;float: right;cursor: pointer;}
-.passwddiv-btn:hover{background: #569aff;}
-.passwddiv-btn:active{box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);}
-.passwddiv-btn-1{border-bottom: 1px solid #fff;width: 15px;margin-top: 14px;margin-left: 6px;}
-.passwddiv-btn-2{border-bottom: 1px solid #fff;border-right: 1px solid #fff;width: 10px;height: 10px;transform: rotate(-45deg);margin-top: -6px;margin-left: 8px;}
-.n_box_des{display:none}
-.filter{filter: blur(5px);}
+::-webkit-scrollbar{background:rgba(0,0,0,0.01);height: 6px;width:6px}::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,0.1)}::-webkit-scrollbar-thumb:hover {background:rgba(0,0,0,0.5);}
+::-webkit-scrollbar-track{background: #f0f0f0;border-radius: 10px;}
+::-webkit-scrollbar-thumb{border-radius: 10px;background-color: #c5c5c5;}
+body{font: 14px Arial,\5FAE\8F6F\96C5\9ED1,sans-serif;margin: auto;color: #333;}
+a{text-decoration: none;color: #111;}
+a:hover{color: #FF3311;}
+.n_hd{  height: 30px;padding: 10px;border-bottom: 1px solid #eee;position: fixed;background: rgba(255, 255, 255, .9);z-index: 8;right: 0;left: 0;}
+.n_hd a{-webkit-transition: 0.1s;float: right;border-radius: 3px;}
+.n_hd a:hover{opacity: .7;}
+.user-ico{float: left;min-width: 300px;text-align: left;line-height: 30px;}
+.user-name{color:#ff6740;margin-left: 10px;}
+.user-name-txt{margin-left: 10px;}
+.user-ico-img{width: 30px;height: 30px;border-radius: 50%;position: absolute;}
+.user-ico-div{background: #bbb;width: 30px;height: 25px;border-radius: 50%;padding-top: 5px;float: left;}
+.user-ico-div-1{background: #777;width: 10px;height: 10px;border-radius: 50%;margin: auto;}
+.user-ico-div-2{background: #777;width: 20px;height: 10px;border-radius: 50%;margin: auto;margin-top: 1px;}
+.n_login{background: #ffd1c5;padding: 0px 12px;font-size: 12px;    line-height: 30px;}
+.n_login font{color: #fff;}
+.n_box{width: 593px;margin-right: auto;margin-left: auto;height: auto;padding-top: 150px;}
+.n_box_ico{border-radius: 10px;width: 100px;height: 100px;margin: auto;}
+.n_box_ico img{border-radius: 20px;    width: 100%;}
+.n_file_info{text-align: center;color: #888;    padding-bottom: 30px;}
+.n_file_infos{margin-left: 10px;}
+.n_box_fn{font-size: 26px;text-align: center;padding: 26px 0px 5px 0px;}
+.n_box_2fn{font-size: 26px;text-align: center;padding: 26px 0px 5px 0px;}
+.n_box_des{padding: 30px 0;margin: auto;line-height: 30px;min-height: 100px;font-size: 16px;}
+.n_box_3fn{font-size: 26px;text-align: center;padding: 26px 0px 5px 0px;}
+.n_file{background: #e1e7ea;font-size: 12px;width: 200px;border-radius: 50px;height: 40px;line-height: 40px;margin: auto;padding: 0 20px;}
+.n_filesize{position: absolute;}
+.n_downlink{position: absolute;height: 34px;width: 300px;margin-top: 4px;z-index: 9;}
+.n_bot{background: #f7f7f7;text-align: center;padding: 50px;}
+#code{margin: auto;width: 190px;margin-top: 30px;}
+.n_foot{font-size: 12px;color: #999;padding: 20px;text-align: center;background: #f7f7f7;}
+.n_copy{}
 </style>
-<div id="pwdload">
-<div class="passwddiv-center">
-<div class="passwddiv-userico"><div class="passwddiv-userico-img" style="background:url();background-size:100%;background-repeat:no-repeat;background-position:50%;"></div><div class="passwddiv-userico-0"><div class="passwddiv-userico-1"></div><div class="passwddiv-userico-2"></div></div></div>
-<div class="passwddiv-user">获取<span>TLSP</span>的文件</div>
-<div class="passwddiv-input"><input type="text" name="pwd" class="passwdinput" id="pwd" value="" placeholder="输入密码" />
-<div class="passwddiv-btn" onclick="file();"><div class="passwddiv-btn-1"></div><div class="passwddiv-btn-2"></div></div></div>
+<div id="file" class="filter">
+<div class="n_hd"><div class="user-ico"><div class="user-ico-div"><div class="user-ico-div-1"></div><div class="user-ico-div-2"></div></div> <span class="user-name">TLSP</span><span class="user-name-txt">的分享文件</span></div><a href="/q/jb/?f=131325712&report=1" class="n_login"><font id="rpt"> </font></a></div>
+<div class="n_box">
+<div style="color: #8a6d3b;background-color: #fcf8e3;padding: 5px;border-radius: 3px;text-align: center;font-size: 12px;position: absolute;width: 400px;margin-top: -70px;margin-left: 90px;">谨防刷单兼职，网贷，金融，裸聊敲诈，赌博等诈骗，请立即举报</div><div class="n_box_ico"><span class="filename"><img src="https://assets.woozooo.com/assets/images/type/rar_max.gif"></span></div>
+<!--<div class="n_box_2fn"></div> -->
+<div class="n_box_3fn" id="filenajax">TLSP-Bedrock-Beta-0.4.3-Fixed-Fixed.rar</div>
+<!--<div class="n_file_info"></div> -->
+<div class="n_file_info"><span class="n_file_infos">6 分钟前</span> <span class="n_file_infos">压缩文件</span></div>
+<div class="n_file"><div class="n_filesize">大小：5.2 M</div><iframe class="n_downlink" name="1691828335" src="/fn?VTMCaF0xBWIDZANmAGYHM1Y7VWFQPVF1BHdSaVQ5UmVQaVA2D2pTNVM9VDFQN1NnAHwGdQdlV2RRcFIjAThWNVUmAjxdZwU_aAz4DMAAtBztWW1UaUHVRCQ_c_c" frameborder="0" scrolling="no"></iframe></div>
+<div class="n_box_des"></div>
 </div>
+<div class="n_bot">
+<div>手机下载请扫二维码</div>
+<div id="code"></div>
 </div>
-<style>
-body{font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;font-size:16px;color: #333;margin: 0;padding: 0;background-color:transparent; border-color:transparent;-webkit-appearance: none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:rgba(0,0,0,0.0);}
-input:focus, textarea:focus {outline: none;}
-#infomores{clear: both;padding: 38px;    font-size: 14px;}
-#filemore{background: #33c5ff;width: 120px;margin: auto;border-radius: 50px;height: 40px;line-height: 40px;color: #fff;cursor: pointer;display: block;text-align: center;}
-#filemore:active{opacity: .7;}
-
-.load2 .loader,
-.load2 .loader:before,
-.load2 .loader:after {border-radius: 50%;}
-.load2 .loader:before,
-.load2 .loader:after {position: absolute;content: '';}
-.load2 .loader:before {width: 16px;height: 32px;background: #fff;border-radius: 32px 0 0 32px;top: -1px;left: -1px;transform-origin: 16px 16px;animation: load2 2s infinite ease 1.5s;}
-.load2 .loader {font-size: 11px;text-indent: -99999em;margin: auto;position: relative;width: 30px;height: 30px;box-shadow: inset 0 0 0 4px #09f;}
-.load2 .loader:after {width: 16px;height: 32px;background: #fff;border-radius: 0 31px 31px 0;top: -1px;left: 15px;transform-origin: 0px 16px;animation: load2 2s infinite ease;}
-@keyframes load2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.load2{position: fixed;width: 100%;background: #fff;height: 100%;z-index: 999;padding-top: 10%;display: none;}
-.loader2{text-align:center;padding-top: 30px;}
-
-
-.user-top{    height: 30px;
-    border-bottom: 1px solid #eee;
-    padding: 10px;}
-.user-ico{float: left;}
-.user-ico-img{width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: absolute;}
-.user-ico-div{    background: #bbb;
-    width: 30px;
-    height: 25px;
-    border-radius: 50%;
-    padding-top: 5px;}
-.user-ico-div-1{    background: #777;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: auto;}
-.user-ico-div-2{background: #777;
-    width: 20px;
-    height: 10px;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 1px;}
-.user-name{    float: left;font-size: 14px;    color: #888;
-    line-height: 30px;
-    margin-left: 10px;}
-.user-name-txt{
-	color: #333;
-    margin-left: 10px;
-	display: none;
-}
-.user-radio{background: #f5f5f5;
-        padding: 8px 10px;
-    margin: 20px;margin-bottom: 25px;
-    border-radius: 3px;}
-.user-radio-0{    background: #f5f5f5;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    margin-top: -12px;
-    -webkit-transform: rotate(45deg);}
-.user-radio-1{font-size: 12px;padding: 3px;background: #de5823;color: #fff;border-radius: 3px 0 0 3px;}
-.user-radio-2{background:#666;margin-right:5px;border-radius: 0 3px 3px 0;}
-.user-title{display:none}
-.n_foot{display:none}
-.n_login{    padding: 6px 0;
-    font-size: 12px;
-    -webkit-transition: 0.2s;
-    float: right;
-    color: #888;text-decoration: none;}
-.file{       margin-top: -1px;}
-.mbx{padding: 0 20px;}
-.mbx:hover{    background: #f1f1f1;}
-.mbxfolder{border-bottom: 1px solid #f7f7f7;}
-#folder{    border-top: 1px solid #f7f7f7;}
-.mlink{    display: inline-block;    color: #333;
-    padding: 20px 0;
-    width: 100%;
-    height: 35px;}
-.mlink:visited{color: #77848a;}
-.fileimg{float: left;background: #eee;
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-    border-radius: 7px;}
-.fileimg img{    margin: auto;width: 100%;    border-radius: 7px;}
-.filename{float: left;line-height: 1em;
-    overflow: hidden;
-    max-width: 250px;
-    text-overflow: ellipsis;    -webkit-transition: 0.1s;}
-.filesize{font-size: 12px;
-    color: #999;    padding-top: 3px;min-width: 200px;}
-.file_time{float: left;width: 70px;}
-.filedown{    color: #999;
-    background: rgba(255, 255, 255, .7);
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #5bccff;
-    border-radius: 50%;
-    right: 20px;}
-.filedown-1{height: 12px;
-    margin-top: 8px;
-    border-left: 1px solid #5bccff;
-    margin-left: 50%;}
-.filedown-2{    border-left: 1px solid #5bccff;
-    border-bottom: 1px solid #5bccff;
-    height: 8px;
-    width: 8px;
-    transform: rotate(-45deg);
-    margin-left: 12px;
-    margin-top: -9px;}
-.folderdown{
-    background: #eee;
-    float: right;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;    transform: rotate(-90deg);}
-.folderdown-2{    border-left: 1px solid #333;
-    border-bottom: 1px solid #333;
-    height: 8px;
-    width: 8px;
-    transform: rotate(-45deg);
-    margin-left: 12px;
-    margin-top: 10px;}
-.user-right{
-	position: fixed;
-    top: 80px;
-    right: 50%;
-    margin-right: -640px;
-    width: 180px;
-}
-.user-code{
-	border: 1px solid #e7e7e7;
-    height: 180px;
-    padding: 20px;
-	text-align:center;
-	border-radius: 6px;
-}
-.user-code-r{
-	padding-top: 20px;
-    font-size: 14px;
-}
-#sms{
-	display: none;
-	z-index: 99;
-    text-align: center;
-    position: fixed;
-    top: 40px;
-    left: 0px;
-    right: 0px;
-    width: 200px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.2em;
-}
-#smsspan{
-	background: rgba(0, 0, 0, .7);
-    color: #fff;
-    font-size: 14px;
-    padding: 5px 8px;
-    border-radius: 3px;
-}
-@media (min-width: 768px){
-	.user-top{
-		position: fixed;
-    background: rgba(255, 255, 255, .9);
-    z-index: 8;
-    right: 0;
-    left: 0;
-	}
-	.off{width: 300px;
-    margin: 150px auto 30px auto;}
-	.input{width: 300px;}
-	.btnpwd{width: 300px;}
-	.user-name{   color:#ff6740; }
-	.n_login{display:block;background: #ffd1c5;    -webkit-transition: 0.2s;text-decoration: none;
-    padding: 0px 12px;    line-height: 30px;
-    font-size: 12px;
-    -webkit-transition: 0.2s;
-    float: right;
-    border-radius: 3px;}
-	.n_login:hover{    opacity: .7;}
-	.n_login font{color: #fff;}
-	.user-name-txt{display:initial}
-	.user-radio-0{background: #fff;}
-	.user-radio{    width: 776px;background: #fff;    line-height: 1.7em;margin: 10px auto 50px auto;}
-	.user-title{    display: block;
-    font-size: 32px;    font-weight: 700;
-    padding: 100px 0 20px 0;
-    width: 800px;
-    margin: auto;}
-	.file-box{    width: 800px; min-height: 450px;border-top: 3px solid #eee;
-    margin: auto;    margin-top: 20px;}
-	.mbx{  }
-	.mbx:hover{    background: #f7f7f7;}
-	#folder{    border-top: 0;}
-	.filename{    max-width: 600px;}
-	.filename:hover{color: #77848a;}
-	.filedown{position: inherit;float: right;}
-	.filedown:hover{opacity: .7;}
-	.n_foot{font-size: 12px;color: #999;padding: 20px;text-align: center;display:block}
-	#smsspan{
-    padding: 2px 5px;
-	}
-}
-.s_ad{    color: #fff;
-    background: #a4df70;
-    font-size: 12px;
-    margin-left: 5px;
-    padding: 1px 2px;
-    border-radius: 3px;}
-#s_search{    display: none;}
-.s_pc_input{float: left;margin-left: 50px;width: 200px;}
-.s_pcsubmit{width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 171px;
-    margin-top: 2px;}
-.s_pcsubmit:hover{opacity: .8;}
-.s_pcsubmit_1{    border: 2px solid #555;
-    width: 8px;
-    height: 8px;
-    margin-top: 6px;
-    margin-left: 6px;
-    border-radius: 50%;}
-.s_pcsubmit_2{    border-bottom: 2px solid #555;
-    width: 6px;
-    height: 0px;
-    transform: rotate(45deg);
-    margin-top: -1px;
-    margin-left: 14px;}
-.spcinput{     background: #eee;
-    border: 0;
-    border-radius: 50px;
-    height: 30px;
-    text-indent: 10px;
-    width: 100%;
-    outline: 0;
-    font-size: 14px;padding: 0;}
-.spcinput:focus{ background: #ddd;}
-.s_box{width: 800px;
-    min-height: 650px;
-    margin: auto;
-    padding-top: 100px;}
-.s_loader,
-.s_loader:before,
-.s_loader:after {border-radius: 50%;}
-.s_loader:before,
-.s_loader:after {position: absolute;content: '';}
-.s_loader:before {width: 16px;height: 32px;background: #fff;border-radius: 50px 0 0 50px;top: -2px;left: -4px;transform-origin: 16px 16px;animation: sload 1s infinite ease 1.5s;}
-.s_loader {font-size: 11px;text-indent: -99999em;margin: auto;position: relative;width: 20px;height: 20px;box-shadow: inset 0 0 0 1px #09f;}
-.s_loader:after {width: 16px;height: 27px;background: #fff;border-radius: 0 50px 50px 0;top: -2px;left: 12px;transform-origin: 0px 13px;animation: sload 1s infinite ease;}
-@keyframes sload {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.s_load{position: absolute;width: 20px;background: #fff;height: 20px;z-index: 999;margin-top: -25px;display: none;margin-left: 210px;}
-@media (max-width: 768px){
-	.passwddiv-user{
-		    font-size: 16px;
-	}
-	.passwddiv-input{
-			padding: 8px;
-			width: 210px;
-	}
-	.passwdinput{
-			line-height: 34px;
-			height: 34px;
-	}
-	.passwddiv-btn{
-			width: 34px;
-			height: 34px;
-	}
-	.passwddiv-btn-1{
-		    margin-top: 16px;
-			margin-left: 8px;
-	}
-	.passwddiv-btn-2{
-			margin-left: 10px;
-	}
-	.folderdown{
-		    position: absolute;
-			right: 20px;
-	}
-}
-
-</style>
-<div class="user-top">
-<div class="user-ico">
-<div class="user-ico-img" style="background:url();background-size:100%;background-repeat:no-repeat;background-position:50%;"></div>
-<div class="user-ico-div"><div class="user-ico-div-1"></div><div class="user-ico-div-2"></div></div>
-</div>
-<div class="user-name">TLSP<span class="user-name-txt">的分享文件</span></div>
-<div class="s_pc_input"><div class="s_pcsubmit" onclick="s_post();"><div class="s_pcsubmit_1"></div><div class="s_pcsubmit_2"></div></div><input type="text" name="spcinput" class="spcinput" id="spcinput" value="" placeholder="文件" /><div class="s_load" id="s_load"><div class="s_loader"></div></div></div><a href="/q/jb/?f=8180868&report=2" class="n_login"><font id="rpt"></font></a></div>
-<div class="user-right">
-<div class="user-code"><div id="code"></div><div class="user-code-r">手机下载请扫二维码</div></div>
-</div>
-<div id="s_search">
-<div class="s_box"><div id="s_file"></div></div>
-</div>
-<div id="fileview">
-<div class="user-title">TLSP-Bedrock</div>
-
-<div class="load2" id="load2"><div class="loader"></div><div class="loader2">努力加载中...</div></div>
-<div class="file" id="info">
-<div class="file-box">
-<div id="folder">
-<div class="mbx mbxfolder"><a href="/b0230c9jg" class="mlink minPx-top"><div class="fileimg" style="background:url(https://assets.woozooo.com/assets/images/type/folder.gif);background-size:100%;background-repeat:no-repeat;background-position:50%;"></div><div class="filename">运行库（必装）<div class="filesize"></div></div><div class="folderdown"><div class="folderdown-2"></div></div></a></div>
-<div class="mbx mbxfolder"><a href="/b0230eeba" class="mlink minPx-top"><div class="fileimg" style="background:url(https://assets.woozooo.com/assets/images/type/folder.gif);background-size:100%;background-repeat:no-repeat;background-position:50%;"></div><div class="filename">国际Win10版<div class="filesize"></div></div><div class="folderdown"><div class="folderdown-2"></div></div></a></div>
-<div class="mbx mbxfolder"><a href="/b0230euej" class="mlink minPx-top"><div class="fileimg" style="background:url(https://assets.woozooo.com/assets/images/type/folder.gif);background-size:100%;background-repeat:no-repeat;background-position:50%;"></div><div class="filename">Windows7补丁（必装）<div class="filesize"></div></div><div class="folderdown"><div class="folderdown-2"></div></div></a></div>
-</div>
-<div id="infos"></div>
-</div>
-<!--filemore-->
-<div id="infomores"><span id="filemore" onclick="more();">更多</span></div>
-</div>
-</div>
-<div class="n_foot"><div class="n_copy">版权声明：不得利用云存储发布，存储，淫秽，诈骗等违法信息。<br>或者投诉邮箱：ta@lanzou.com</div>&copy; 2023 Lanzou</div>
+<div class="n_foot"><div class="n_copy">版权声明：不得利用云存储发布，存储，淫秽，诈骗等违法信息。<br>或者投诉邮箱：ta@lanzou.com</div>&copy; 2023 Lanzou</div></div>
 <script type="text/javascript">
-	var search_lock = 1;//search lock
-	var pwd;
-	var pgs;
-	var ib4h19 = '1691828325';
-	var _h2t32 = '1facbd48271bbbbe37ade135f3f52179';
-	pgs =1;
-		document.getElementById('rpt').innerHTML='举报';
-//回车事件
-$(document).keyup(function (e) {
-	if (e.keyCode == 13) {
-		if(search_lock == 1){
-			file();
-		}
-	}
-});
-function sms(stx){
-	document.getElementById("sms").style.display="none";
-	$("#smsspan").text(stx);
-	document.getElementById("sms").style.display="block";
-	setTimeout('document.getElementById("sms").style.display="none";',5000);
-}
-function file(){
-		var pwd = document.getElementById('pwd').value;
-	$('#sub').val("提交中..."); 
-	if (pwd == '' || pwd == undefined || pwd == null) {
-			$(".passwdinput").focus();
-			return false;
-	}
-		$.ajax({
-			type : 'post',
-			url : '/filemoreajax.php',
-			data : { 
-			'lx':2,
-			'fid':8180868,
-			'uid':'1849386',
-			'pg':pgs,
-			'rep':'0',
-			't':ib4h19,
-			'k':_h2t32,
-			'up':1,
-			'vip':'0',
-			'webfoldersign':'',
-						'ls':1,
-			'pwd':pwd			},
-			dataType : 'json',
-			success:function(msg){
-				//隐藏
-				document.getElementById("load2").style.display="none";
-				if(msg.zt == '1'){
-										document.getElementById("pwdload").style.display="none";
-					document.getElementById("info").style.display="block";
-										var data = msg.text;
-					$.each(data, function(i, n){
-						search_lock = 2;//解除回车锁
-						var str;
-						var file_ico;
-						var alink = '/' + n.id;
-						var file_time ='';
-												file_time = '<div class="file_time">'+ n.time +'</div>';
-												if(n.t ==1){ //style 1
-							alink = n.id;
-							n.name_all = n.name_all + '<span class="s_ad">推广</span>';
-						}
-												file_ico = '<div class=fileimg><img src=https://assets.woozooo.com/assets/images/type/'+ n.icon +'.gif align=absmiddle border=0></div>';
-						if(n.p_ico ==1){
-							file_ico = '<div class=fileimg style=background:url(https://image.woozooo.com/image/ico/'+ n.ico +'?x-oss-process=image/auto-orient,1/resize,m_fill,w_100,h_100/format,png);background-size:100%;background-repeat:no-repeat;background-position:50%;></div>';
-						}
-						str ='<div id=ready><div class=mbx><a href=' + alink + ' target=_blank class="mlink minPx-top">'+ file_ico +'<div class=filename>' + n.name_all + '<div class=filesize>'+ file_time + '<div>' + n.size +'</div></div></div><div class=filedown><div class=filedown-1></div><div class=filedown-2></div></div></a></div></div>';
-												if(n.id != '-1'){
-							$(str).appendTo("#infos");
-						}
-					});
-					pgs++;
-					//少于50条，隐"more"
-					if(data.length<50){
-						document.getElementById("filemore").style.display="none";
-					}
-					//alert(data.length);
-
-				}else if(msg.zt == '2'){
-					//sms(msg.info);
-					document.getElementById("filemore").style.display="none";
-										document.getElementById("pwdload").style.display="none";
-					document.getElementById("info").style.display="block";
-									}else if(msg.zt == '3'){
-										sms(msg.info)
-					$('#sub').val("确认"); 
-									}else if(msg.zt == '6'){
-					document.getElementById("filemore").style.display="none";
-					sms(msg.info);
-										document.getElementById("pwdload").style.display="none";
-					document.getElementById("info").style.display="block";
-									}else{
-					sms(msg.info);
-				}
-			},
-			error:function(){
-				$("#infos").text("获取失败，请重试");
-			}
-	
-	});
-}
-function more(){
-				var pwd = document.getElementById('pwd').value;
-				$("#filemore").text("文件获取中...");
-		$.ajax({
-			type : 'post',
-			url : '/filemoreajax.php',
-			data : { 
-			'lx':2,
-			'fid':8180868,
-			'uid':'1849386',
-			'pg':pgs,
-			'rep':'0',
-			't':ib4h19,
-			'k':_h2t32,
-			'up':1,
-			'vip':'0',
-			'webfoldersign':'',
-						'ls':1,
-			'pwd':pwd			},
-			dataType : 'json',
-			success:function(msg){
-				if(msg.zt == '1'){
-					var data = msg.text;
-					$.each(data, function(i, n){
-						var str;
-						var file_ico;
-						var alink = '/' + n.id;
-						var file_time ='';
-												file_time = '<div class="file_time">'+ n.time +'</div>';
-												if(n.t ==1){ //style 1
-							alink = n.id;
-							n.name_all = n.name_all + '<span class="s_ad">推广</span>';
-						}
-												file_ico = '<div class=fileimg><img src=https://assets.woozooo.com/assets/images/type/'+ n.icon +'.gif align=absmiddle border=0></div>';
-						if(n.p_ico ==1){
-							file_ico = '<div class=fileimg style=background:url(https://image.woozooo.com/image/ico/'+ n.ico +'?x-oss-process=image/auto-orient,1/resize,m_fill,w_100,h_100/format,png);background-size:100%;background-repeat:no-repeat;background-position:50%;></div>';
-						}
-						str ='<div id=ready><div class=mbx><a href=' + alink + ' target=_blank class="mlink minPx-top">'+ file_ico +'<div class=filename>' + n.name_all + '<div class=filesize>'+ file_time + '<div>' + n.size +'</div></div></div><div class=filedown><div class=filedown-1></div><div class=filedown-2></div></div></a></div></div>';
-												if(n.id != '-1'){
-							$(str).appendTo("#infos");
-						}
-					});
-					if(data.length<50){
-						document.getElementById("filemore").style.display="none";
-					}else{
-						$("#filemore").text("更多");
-					}
-					pgs++;
-
-				}else{
-					sms(msg.info);
-					document.getElementById("filemore").style.display="none";
-				}
-			},
-			error:function(){
-				$("filemore").text("获取失败，请重试");
-			}
-	
-		});
-	}
-var urls =window.location.href + '?cp=qy8plkf.0.0';
+document.getElementById('rpt').innerHTML='举报';
+var urls =window.location.href + '?cp=qy8pluf.0.0';
 var qrcode = new QRCode('code', {
 					text: urls,
-					width: 138,
-					height: 138,
+					width: 190,
+					height: 190,
 					colorDark : '#3f3f3f',
 					colorLight : '#ffffff',
 					correctLevel : QRCode.CorrectLevel.H
 				});
-function s_cl(){
-	$(".search").show();
-	$("#s_search").hide();
-	$("#fileview").show();
-	$("#s_file").html("");
-}
-//search post ajax
-function s_post(){
-		var wd = document.getElementById('spcinput').value;
-	$("#s_load").show();//load style
-			var pwd = document.getElementById('pwd').value;
-		$.ajax({
-			type : 'post',
-			url : '/search/s.php',
-			data : { 
-			'wd':wd,
-			'sign':'BjcGaQhhUD1WMwFvBWddc1Y0BDAFYgAyV2gHN1I2UnxSJgE6W3VUcFQtAGcFflRkVjoHO1c5CzEFMAEwAWpRYgYzBn4IZQ==',
-			//'pg':pgs,
-						'pwd':pwd			},
-			dataType : 'json',
-			success:function(msg){
-				if(msg.zt == '1'){
-					$("#s_file").html("");
-					$("#s_search").show();
-					var data = msg.item;
-					$.each(data, function(i, n){
-						var str;
-						var file_ico;
-						var alink = '/' + n.id;
-						var downstyle = '<div class=filedown><div class=filedown-1></div><div class=filedown-2></div></div>';
-						if(n.t ==1){
-							alink = n.id;
-							n.name_all = n.name_all + '<span class="s_ad">推广</span>';
-							downstyle = '';
-						}
-						file_ico = '<div class=fileimg><img src=https://assets.woozooo.com/assets/images/type/'+ n.icon +'.gif align=absmiddle border=0></div>';
-						if(n.p_ico ==1){
-							file_ico = '<div class=fileimg style=background:url(https://image.woozooo.com/image/ico/'+ n.ico +'?x-oss-process=image/auto-orient,1/resize,m_fill,w_100,h_100/format,png);background-size:100%;background-repeat:no-repeat;background-position:50%;></div>';
-						}
-						str ='<div id=ready><div class=mbx><a href=' + alink + ' target=_blank class="mlink minPx-top">'+ file_ico +'<div class=filename>' + n.name_all + '<div class=filesize>'+ n.size +'</div></div>'+ downstyle +'</a></div></div>';
-						$(str).appendTo("#s_file");
-					});
-										$("#fileview").hide();
-									}else{
-					sms(msg.msg);
-				}
-				//load style
-								setTimeout('document.getElementById("s_load").style.display="none";',1500);
-							},
-			error:function(){
-				sms("获取失败，请重试");
-			}
-	
-		});
-}
-//huiche
-$(document).keyup(function (e) {
-	if (e.keyCode == 13) {
-		if(search_lock == 2){
-			s_post();
-		}
-	}
-});
 </script>
-
-<div style="display:none"><script src="https://statics.woozooo.com/img/bd.js"></script></div>
+<div style="display:none"><script src="https://statics.woozooo.com/img/bd.js"></script><script src="https://statics.woozooo.com/img/hm.js"></script></div>
 </body>
 </html>
