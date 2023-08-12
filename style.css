@@ -155,3 +155,8 @@ section img#mountains_front {
   font-size: 1em;
   color: #fff;
 }
+.about h3 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
