@@ -59,3 +59,19 @@ body {
 .welcome-img img {
     width: 100%;
 }
+.about {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+
+.about h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.about p {
+  font-size: 1em;
+  color: #fff;
+}
