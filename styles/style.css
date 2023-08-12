@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    background: #181818;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+    float: right;
+    background: #1e1e1e;
+    border-radius: 30px;
+}
+
+.navbar a {
+  transition: 0.3s;
+  text-decoration: none;
+	border-radius: 30px;
+	text-align: center;
+	padding: 15px 15px;
+  font-family: 'Poppins', sand-serif;
+  font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	color: #888888;
+	float: left;
+	max-width: 10;
+}
+
+.navbar a:hover {
+	color: white;
+}
+
+.navbar a.active {
+    color: #0e66ba;
+}
+
+.navbar a.download {
+    color:#0e66ba;
+    background: #192f41;
+}
+
+.navbar a.download:hover {
+  color: #83daff;
+}
+.downloadButton {
+  transition: 0.3s;
+  background: #192f41;
+  padding: 18px 18px;
+  border-radius: 17px;
+  color: #83daff;
+}
+.downloadButton a {
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Poppins', sand-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  float: center;
+  max-width: 10;
+}
+.downloadButton a:hover{
+  color: white;
+}
+.downloadButton a.active {
+    color: #0e66ba;
+}
+
+
+.downloadButton:hover {
+  background: #0e66ba;
+  color: white;
+}
+
+.downloadButton:active {
+  background: #0e66ba;
+  color: white;
+}
+
+
+.topbar img{
+ float: left;
+}
+
+.centerdiv {
+    text-align: center;
+    animation: TransitionIn 1s;
+}
+
+.cb {
+    border: 2px solid #333333;
+    background: #111111;
+    border-radius: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cb b {
+    color: #0e66ba;
+}
+
+.name {
+  animation: TextAnimation 1.7s infinite alternate;
+}
+
+h2 {
+   font-family: 'Poppins', sand-serif;
+}
+
+p {
+  font-family: 'Poppins', sand-serif;
+}
+footer {
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 3px;
+  color: rgb(100, 100, 100);
+}
+.images {
+  justify-content: center;
+  border-radius: 10px;
+}
+.overlapA {
+    position: relative;
+    left: -200px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+    animation: gradient 1s linear infinite;
+}
+.overlapA:hover {
+    transform: scale(1.05);
+    rotate: -2deg;
+    animation: linear 1s ease-in-out infinite;
+}
+
+.overlapB {
+    position: relative;
+    top: -100px;
+    left: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+    animation: linear-gradient 1s linear infinite;
+}
+
+.overlapB:hover {
+  transform: scale(1.05);
+  rotate: 2deg;
+}
+
+.overlapC {
+    position: relative;
+    top: -520px;
+    left: -53px;
+    transition: all .4s ease-in-out;
+    animation: gradient 1s linear infinite;
+}
+
+.overlapC:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+  rotate: -360deg;
+}
+
+.name {
+  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.logothing {
+  transition: all .5s ease-in-out;
+  float: inline-start;
+}
+
+.logothing:hover {
+  transform: scale(1.1);
+}
+
+.download {
+  transition: all .2s ease-in-out;
+  float: center;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.download:hover {
+  transform: scale(1.1);
+}
+
+hr {
+  border: 1px solid rgb(100, 100, 100);
+}
+@keyframes TransitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes TextAnimation {
+  0% {
+    color: #0e66ba;
+  }
+  100% {
+    color: #83daff;
+  }
+  from {
+    opacity: 0.5;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+@keyframes EnlargeText {
+  0% {
+    font-size: 40px;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+
+.chroma {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  transition: all 30s ease-in-out;
+  float: center;
+  padding: 30px;
+  border-radius: 20px;;
+}
+
+.chroma:hover {
+  transform: scale(20);
+  /* rotate: 360deg; */
+  animation: gradient 15s ease infinite;
+}
+
+/* @keyframes rotate {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+} */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
