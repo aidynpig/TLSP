@@ -165,3 +165,112 @@ section img#mountains_front {
   margin-bottom: 10px;
   color: #fff;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#iz29t{
+  color:#ffffff;
+}
+#2{
+  color:#5fe877;
+}
+#ix87m{
+  color:#ffffff;
+}
+#ix87m-2{
+  color:#ffffff;
+}
+#ix87m-3{
+  color:#ffffff;
+}
+#iuwev{
+  color:#ffffff;
+}
+#ie6kk{
+  color:#ffffff;
+}
+#ivb0k{
+  color:#ffffff;
+}
+#iocy5{
+  color:#ffffff;
+}
+#ihsoo{
+  color:#ffffff;
+}
+#ie8xw{
+  color:#ffffff;
+}
+#ib0ex{
+  color:#ffffff;
+}
+#im26h{
+  color:#ffffff;
+}
+#igvyh{
+  color:#ffffff;
+}
+#iesed{
+  color:#ffffff;
+}
+#icgvd{
+  color:#ffffff;
+}
+#ihwxh{
+  color:#ffffff;
+}
+#ipbap{
+  color:#ffffff;
+}
+#iebjb{
+  color:#ffffff;
+}
+#ix2ep{
+  color:#ffffff;
+}
+#irr9e{
+  color:#ffffff;
+}
+#ij0zk{
+  color:#ffffff;
+}
+#i0esz{
+  color:#ffffff;
+}
+#iks1h{
+  color:#ffffff;
+}
+#iz7a8r{
+  color:#ffffff;
+}
+#in380q{
+  color:#ffffff;
+}
+.img-mask.mask-1 img{
+  -webkit-mask-image:url("img/blob.svg") !important;
+}
+.img-mask.mask-2 img{
+  -webkit-mask-image:url("img/hex.svg") !important;
+}
+.img-mask.mask-3 img{
+  -webkit-mask-image:url("img/blob2.svg") !important;
+}
+.c19213{
+  font-family:'Poppins', sans-serif;
+  color:#ffffff;
+}
+@font-face{
+  font-family:Unicons;
+  src:url("fonts/Unicons.woff2") format("woff2"), url("fonts/Unicons.woff") format("woff");
+  font-weight:400;
+  font-style:normal;
+  font-display:block;
+}
+@font-face{
+  font-family:Custom;
+  src:url("fonts/Custom.woff2") format("woff2"), url("fonts/Custom.woff") format("woff");
+}
+
