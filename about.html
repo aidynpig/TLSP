@@ -1,38 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="zh-CN">
 
-<html>
-<head>
-    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" type="onixlogo" href="favicon.ico">
-    <title>TLSP Bedrock</title>
-    <meta content="Onix Client License" property="og:title">
-    <meta content="Onix Client - License" property="og:site_name">
-    <meta content="https://onixclient.com/license" property="og:url">
-    <meta content="https://onixclient.com/assets/license.png" property="og:image">
-    <meta content="summary_large_image" name="twitter:card">
-    <meta content="#008FC1" data-react-helmet="true" name="theme-color">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>TLSP-Bedrock</title>
+    <link rel="shortcut icon" href="https://aidynpig.github.io/TLSP/icon.png">
+    <style>
+      @font-face {
+        font-family: Unicons;
+        src: url(fonts/Unicons.woff2) format("woff2"), url(fonts/Unicons.woff) format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block
+      }
+
+      @font-face {
+        font-family: Custom;
+        src: url(fonts/Custom.woff2) format("woff2"), url(fonts/Custom.woff) format("woff");
+      }
+
+      .img-mask.mask-1 img {
+        -webkit-mask-image: url(img/blob.svg) !important;
+        mask-image: url(img/blob.svg) !important;
+      }
+
+      .img-mask.mask-2 img {
+        -webkit-mask-image: url(img/hex.svg) !important;
+        mask-image: url(img/hex.svg) !important;
+      }
+
+      .img-mask.mask-3 img {
+        -webkit-mask-image: url(img/blob2.svg) !important;
+        mask-image: url(img/blob2.svg) !important;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/user-style.css">
+  </head>
+
+  <body>
+
     <body>
-        <div class="topbar">
-            <div class="logothing">
-                <a href="https://aidynpig.github.io/TLSP">
-                    <img src="assets/biglogo.png" width="45" height="45" alt="logo">
-                    <span class="name">
-                        TLSP Bedrock
-                    </span>
-                </a>
-            </div>
-            <span class="navbar">
-                <a href="https://onixclient.com">Home</a>
-                <a href="faq">FAQ</a>
-                <a href="license"class="active">License</a>
-                <a href="https://onixclient.com/patreon"target="_blank" rel="noopener noreferrer">Donate</a>
-                <a href="https://docs.onixclient.com"target="_blank" rel="noopener noreferrer">Scripting</a>
-                <a href="download" class="download">Download</a>
-            </span>
-        </div><br>
-        <br><br>
+      <title>TLSP-Bedrock</title>
+      <link rel="stylesheet" href="style.css" />
+      <header><a href="#" class="logo">TLSP-Bedrock</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <section><img src="images/stars.png" id="stars" /><img src="images/moon.png" id="moon" /><img src="images/mountains_behind.png" id="mountains_behind" />
+        <h2 id="text">TLSP Bedrock</h2><a href="#sec" id="btn">Download</a><img src="images/mountains_front.png" id="mountains_front" />
+      </section>
         <div class="centerdiv">
             <h1 style="font-family: 'Poppins', sans-serif;">关于 TLSP Bedrock</h1>
         </div>
