@@ -267,4 +267,6 @@ section img#mountains_front {
   font-family:Custom;
   src:url("fonts/Custom.woff2") format("woff2"), url("fonts/Custom.woff") format("woff");
 }
-
+.Download {
+  text-decoration: none;
+}
