@@ -83,9 +83,6 @@ body {
 .dow {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 30px;
-  border-radius: 40px;
-  background: #fff;
   color: #fff;
   font-size: 1.5em;
   z-index: 9;
